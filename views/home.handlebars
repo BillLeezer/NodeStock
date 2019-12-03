@@ -1,3 +1,21 @@
-<h1>This is my HandleBars HomePage...!<h1/>
 
-<p>{{stuff}}</p>
+<!-- Search results for: {{posted_stuff}}<br/>   -->
+
+<div class="jumbotron">
+  
+<h3 class="display-9">{{ stock.companyName }} ({{ stock.symbol }})</h3>
+
+<strong>Latest Price: </strong>${{ stock.latestPrice }}<br/>
+<strong>Previous Close: </strong>${{ stock.previousClose }}<br/>
+<strong>Percent Change: </strong>{{ stock.changePercent }}%<br/>
+<strong>Market Cap: </strong>${{ stock.marketCap }}<br/>
+<strong>YTD Change: </strong>{{ stock.ytdChange }}%<br/>
+<strong>52 Week High: </strong>${{ stock.week52High }}<br/>
+<strong>52 Week Low: </strong>${{ stock.week52Low }}<br/>
+
+<br/>
+<p>by: Bill Leezer</p>
+
+</div>
+
+
